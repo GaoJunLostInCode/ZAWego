@@ -15,6 +15,7 @@
 		E185CCFE1D0D414A00D5EF21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E185CCFC1D0D414A00D5EF21 /* LaunchScreen.storyboard */; };
 		E185CD091D0D414A00D5EF21 /* PodLibTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E185CD081D0D414A00D5EF21 /* PodLibTestTests.m */; };
 		E185CD141D0D414A00D5EF21 /* PodLibTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E185CD131D0D414A00D5EF21 /* PodLibTestUITests.m */; };
+		E185CD251D0D41A000D5EF21 /* GJTest.m in Sources */ = {isa = PBXBuildFile; fileRef = E185CD241D0D41A000D5EF21 /* GJTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		E185CD0F1D0D414A00D5EF21 /* PodLibTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PodLibTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E185CD131D0D414A00D5EF21 /* PodLibTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PodLibTestUITests.m; sourceTree = "<group>"; };
 		E185CD151D0D414A00D5EF21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E185CD231D0D41A000D5EF21 /* GJTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GJTest.h; sourceTree = "<group>"; };
+		E185CD241D0D41A000D5EF21 /* GJTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GJTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +104,7 @@
 		E185CCED1D0D414A00D5EF21 /* PodLibTest */ = {
 			isa = PBXGroup;
 			children = (
+				E185CD221D0D418600D5EF21 /* GJLib */,
 				E185CCF11D0D414A00D5EF21 /* AppDelegate.h */,
 				E185CCF21D0D414A00D5EF21 /* AppDelegate.m */,
 				E185CCF41D0D414A00D5EF21 /* ViewController.h */,
@@ -138,6 +142,15 @@
 				E185CD151D0D414A00D5EF21 /* Info.plist */,
 			);
 			path = PodLibTestUITests;
+			sourceTree = "<group>";
+		};
+		E185CD221D0D418600D5EF21 /* GJLib */ = {
+			isa = PBXGroup;
+			children = (
+				E185CD231D0D41A000D5EF21 /* GJTest.h */,
+				E185CD241D0D41A000D5EF21 /* GJTest.m */,
+			);
+			path = GJLib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,6 +283,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E185CD251D0D41A000D5EF21 /* GJTest.m in Sources */,
 				E185CCF61D0D414A00D5EF21 /* ViewController.m in Sources */,
 				E185CCF31D0D414A00D5EF21 /* AppDelegate.m in Sources */,
 				E185CCF01D0D414A00D5EF21 /* main.m in Sources */,
@@ -412,6 +426,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PodLibTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.com.za.lsd.enterprise.PodLibTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -423,6 +438,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PodLibTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.com.za.lsd.enterprise.PodLibTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
